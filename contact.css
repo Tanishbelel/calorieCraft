@@ -1,0 +1,98 @@
+/* Contact Hero Section */
+.contact-hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+/* Contact Details Section */
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.contact-box {
+    max-width: 40%;
+}
+
+.contact-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    max-width: 40%;
+}
+
+.contact-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ff5a5f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #e64e4f;
+}
+
+/* Map Section */
+.map-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}

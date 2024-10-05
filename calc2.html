@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Salad Calorie Calculator</title>
+    <link rel="stylesheet" href="calc2.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Chicken Salad</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Quantity</th>
+                    <th>Calories</th>
+                    <th>Adjust</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Chicken Breast</td>
+                    <td id="chicken-qty">0</td>
+                    <td id="chicken-cal">165</td>
+                    <td>
+                        <button onclick="updateCalories('chicken', 'subtract')">-</button>
+                        <button onclick="updateCalories('chicken', 'add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lettuce</td>
+                    <td id="lettuce-qty">0</td>
+                    <td id="lettuce-cal">5</td>
+                    <td>
+                        <button onclick="updateCalories('lettuce', 'subtract')">-</button>
+                        <button onclick="updateCalories('lettuce', 'add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tomato</td>
+                    <td id="tomato-qty">0</td>
+                    <td id="tomato-cal">22</td>
+                    <td>
+                        <button onclick="updateCalories('tomato', 'subtract')">-</button>
+                        <button onclick="updateCalories('tomato', 'add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cucumber</td>
+                    <td id="cucumber-qty">0</td>
+                    <td id="cucumber-cal">16</td>
+                    <td>
+                        <button onclick="updateCalories('cucumber', 'subtract')">-</button>
+                        <button onclick="updateCalories('cucumber', 'add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Olive Oil</td>
+                    <td id="olive-oil-qty">0</td>
+                    <td id="olive-oil-cal">119</td>
+                    <td>
+                        <button onclick="updateCalories('olive-oil', 'subtract')">-</button>
+                        <button onclick="updateCalories('olive-oil', 'add')">+</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="total">
+            <span>Total Calories: </span>
+            <span id="total-calories">0</span>
+        </div>
+
+        <!-- Session End Button -->
+        <div class="session-end">
+            <a href="index.html">
+                <button class="session-button">End Session</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+</html>

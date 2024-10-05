@@ -1,0 +1,146 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: white;
+    color: #333;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Header */
+header {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav .sign-up {
+    padding: 10px 20px;
+    background-color: #E94B3C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-color: white;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+.hero button {
+    padding: 10px 20px;
+    margin: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-menu {
+    background-color: #E94B3C;
+    color: white;
+}
+
+.book-table {
+    background-color: white;
+    border: 2px solid #E94B3C;
+    color: #E94B3C;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.hero-image .percentage {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #E94B3C;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Menu Section */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: white;
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-item img {
+    width: 150px;
+    /*height: auto;*/
+    border-radius: 50%;
+}
+
+.menu-item h3 {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+.logored{
+    color: #E94B3C  ;
+}

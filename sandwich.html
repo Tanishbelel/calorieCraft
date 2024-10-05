@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paneer Sandwich Calorie Calculator</title>
+    <link rel="stylesheet" href="sandwich.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Paneer Sandwich</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Quantity</th>
+                    <th>Calories</th>
+                    <th>Adjust</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paneer</td>
+                    <td id="paneer-qty">0</td>
+                    <td id="paneer-cal">0</td>
+                    <td>
+                        <button onclick="updateCalories('paneer', 'subtract')">-</button>
+                        <button onclick="updateCalories('paneer', 'add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bread</td>
+                    <td id="bread-qty">0</td>
+                    <td id="bread-cal">0</td>
+                    <td>
+                        <button onclick="updateCalories('bread', 'subtract')">-</button>
+                        <button onclick="updateCalories('bread', 'add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tomato</td>
+                    <td id="tomato-qty">0</td>
+                    <td id="tomato-cal">0</td>
+                    <td>
+                        <button onclick="updateCalories('tomato', 'subtract')">-</button>
+                        <button onclick="updateCalories('tomato', 'add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cucumber</td>
+                    <td id="cucumber-qty">0</td>
+                    <td id="cucumber-cal">0</td>
+                    <td>
+                        <button onclick="updateCalories('cucumber', 'subtract')">-</button>
+                        <button onclick="updateCalories('cucumber', 'add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mayonnaise</td>
+                    <td id="mayonnaise-qty">0</td>
+                    <td id="mayonnaise-cal">0</td>
+                    <td>
+                        <button onclick="updateCalories('mayonnaise', 'subtract')">-</button>
+                        <button onclick="updateCalories('mayonnaise', 'add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Butter</td>
+                    <td id="butter-qty">0</td>
+                    <td id="butter-cal">0</td>
+                    <td>
+                        <button onclick="updateCalories('butter', 'subtract')">-</button>
+                        <button onclick="updateCalories('butter', 'add')">+</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="total">
+            <span>Total Calories: </span>
+            <span id="total-calories">0</span>
+        </div>
+
+        <!-- Session End Button -->
+        <div class="session-end">
+            <a href="index.html">
+                <button class="session-button">End Session</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="sandwich.js"></script>
+</body>
+</html>

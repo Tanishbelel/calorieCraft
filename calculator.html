@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Milkshake Calorie Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Banana Milkshake</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Quantity</th>
+                    <th>Calories</th>
+                    <th>Adjust</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Banana</td>
+                    <td id="banana-qty">0</td>
+                    <td id="banana-cal">0</td>
+                    <td>
+                        <button onclick="updateCalories('banana', 'subtract')">-</button>
+                        <button onclick="updateCalories('banana', 'add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Whole Milk</td>
+                    <td id="milk-qty">0</td>
+                    <td id="milk-cal">0</td>
+                    <td>
+                        <button onclick="updateCalories('milk', 'subtract')">-</button>
+                        <button onclick="updateCalories('milk', 'add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Honey</td>
+                    <td id="honey-qty">0</td>
+                    <td id="honey-cal">0</td>
+                    <td>
+                        <button onclick="updateCalories('honey', 'subtract')">-</button>
+                        <button onclick="updateCalories('honey', 'add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ice Cubes</td>
+                    <td id="ice-qty">0</td>
+                    <td id="ice-cal">0</td>
+                    <td>
+                        <button disabled>-</button>
+                        <button disabled>+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Vanilla Extract</td>
+                    <td id="vanilla-qty">0</td>
+                    <td id="vanilla-cal">0</td>
+                    <td>
+                        <button onclick="updateCalories('vanilla', 'subtract')">-</button>
+                        <button onclick="updateCalories('vanilla', 'add')">+</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="total">
+            <span>Total Calories: </span>
+            <span id="total-calories">0</span>
+        </div>
+
+        <!-- Session End Button -->
+        <div class="session-end">
+            <a href="index.html">
+                <button class="session-button">End Session</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

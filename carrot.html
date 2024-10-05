@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrot Soup Calorie Calculator</title>
+    <link rel="stylesheet" href="carrot.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Carrot Soup</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Quantity</th>
+                    <th>Calories</th>
+                    <th>Adjust</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Carrots</td>
+                    <td id="carrots-qty">0</td>
+                    <td id="carrots-cal">0</td>
+                    <td>
+                        <button onclick="updateCalories('carrots', 'subtract')">-</button>
+                        <button onclick="updateCalories('carrots', 'add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Onion</td>
+                    <td id="onion-qty">0</td>
+                    <td id="onion-cal">0</td>
+                    <td>
+                        <button onclick="updateCalories('onion', 'subtract')">-</button>
+                        <button onclick="updateCalories('onion', 'add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Garlic</td>
+                    <td id="garlic-qty">0</td>
+                    <td id="garlic-cal">0</td>
+                    <td>
+                        <button onclick="updateCalories('garlic', 'subtract')">-</button>
+                        <button onclick="updateCalories('garlic', 'add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Vegetable Broth</td>
+                    <td id="broth-qty">0</td>
+                    <td id="broth-cal">0</td>
+                    <td>
+                        <button onclick="updateCalories('broth', 'subtract')">-</button>
+                        <button onclick="updateCalories('broth', 'add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Olive Oil</td>
+                    <td id="oil-qty">0</td>
+                    <td id="oil-cal">0</td>
+                    <td>
+                        <button onclick="updateCalories('oil', 'subtract')">-</button>
+                        <button onclick="updateCalories('oil', 'add')">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cream</td>
+                    <td id="cream-qty">0</td>
+                    <td id="cream-cal">0</td>
+                    <td>
+                        <button onclick="updateCalories('cream', 'subtract')">-</button>
+                        <button onclick="updateCalories('cream', 'add')">+</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="total">
+            <span>Total Calories: </span>
+            <span id="total-calories">0</span>
+        </div>
+
+        <!-- Session End Button -->
+        <div class="session-end">
+            <a href="index.html">
+                <button class="session-button">End Session</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="carrot.js"></script>
+</body>
+</html>
